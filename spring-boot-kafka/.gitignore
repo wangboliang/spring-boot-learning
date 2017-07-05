@@ -18,11 +18,3 @@ logs
 *.iml
 *.ipr
 tmlog.lck
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/

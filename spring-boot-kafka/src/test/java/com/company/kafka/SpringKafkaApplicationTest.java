@@ -1,9 +1,7 @@
-package com.wangboliang.kafka;
+package com.company.kafka;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.util.concurrent.TimeUnit;
-
+import com.company.kafka.consumer.Receiver;
+import com.company.kafka.producer.Sender;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.junit.Test;
@@ -13,8 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.kafka.test.rule.KafkaEmbedded;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.wangboliang.kafka.consumer.Receiver;
-import com.wangboliang.kafka.producer.Sender;
+import java.util.concurrent.TimeUnit;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -38,7 +37,7 @@ public class SpringKafkaApplicationTest {
 
   @Test
   public void testReceive() throws Exception {
-    sender.send(BOOT_TOPIC, "Hello Boot!");
+    sender.send("Hello Boot!");
 
     receiver.getLatch().await(10000, TimeUnit.MILLISECONDS);
     assertThat(receiver.getLatch().getCount()).isEqualTo(0);
