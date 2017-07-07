@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+grpc:
+  client:
+    spring-boot-grpc-server:
+      enable-keep-alive: true
+      keep-alive-delay: 5 # seconds
