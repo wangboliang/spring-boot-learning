@@ -4,22 +4,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wangboliang</groupId>
-    <artifactId>spring-boot-kafka</artifactId>
+    <artifactId>spring-boot-elasticsearch</artifactId>
     <version>1.0.0</version>
 
-    <name>spring-boot-kafka</name>
-    <description>Spring Kafka - Spring Boot Example</description>
+    <name>spring-boot-elasticsearch</name>
+    <description>Spring ElasticSearch - Spring Boot Example</description>
     <url>https://github.com/wangboliang</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.2.RELEASE</version>
+        <version>1.5.6.RELEASE</version>
     </parent>
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-kafka.version>1.2.0.RELEASE</spring-kafka.version>
         <lombok.version>1.16.8</lombok.version>
         <com.fasterxml.jackson.core>2.8.1</com.fasterxml.jackson.core>
     </properties>
@@ -35,17 +34,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- spring-kafka -->
+        <!-- elasticsearch -->
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-            <version>${spring-kafka.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
+        <!-- Runtime, for Embedded Elasticsearch, comment this if connect to external elastic search server-->
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka-test</artifactId>
-            <version>${spring-kafka.version}</version>
-            <scope>test</scope>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <!-- lombok -->
         <dependency>

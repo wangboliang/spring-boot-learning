@@ -1,7 +1,7 @@
 package com.kafka;
 
-import kafka.consumer.Receiver;
-import kafka.producer.Sender;
+import com.kafka.consumer.Receiver;
+import com.kafka.producer.Sender;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.junit.Test;
