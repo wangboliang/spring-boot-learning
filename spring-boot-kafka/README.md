@@ -3,7 +3,7 @@
 kafka downloads: http://kafka.apache.org/downloads
 zookeeper downloads: https://www.apache.org/dyn/closer.cgi
 
-kafka名词解释和工作方式：
+kafka名词解释和工作方式：  
 Producer ：消息生产者，就是向kafka broker发消息的客户端。
 Consumer ：消息消费者，向kafka broker取消息的客户端
 Topic ：咋们可以理解为一个队列。
