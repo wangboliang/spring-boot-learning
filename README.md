@@ -6,7 +6,7 @@ Spring Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，
 	- [配置文件详解](http://blog.didispace.com/springbootproperties/)
 - ### 内嵌Tomcat（默认使用）、Jetty和Underto容器,可以创建独立启动的应用程序
 	- 如何定制和修改Servlet容器的相关配置
- 		> - Servlet配置属性参考``org.springframework.boot.autoconfigure.web.ServerProperties``类
+ 		> - Servlet配置属性参考[ServerProperties](https://github.com/spring-projects/spring-boot/blob/master/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/ServerProperties.java)
  	- 自定义Servlet三大组件【Servlet、Filter、Listener】
     	> - ``ServletRegistrationBean``
 		> - ``FilterRegistrationBean``
