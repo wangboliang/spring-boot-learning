@@ -6,14 +6,14 @@ Spring Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，
 	- [配置文件详解](http://blog.didispace.com/springbootproperties/)
 - ### 内嵌Tomcat（默认使用）、Jetty和Underto容器,可以创建独立启动的应用程序
 	- 如何定制和修改Servlet容器的相关配置
-    	- <small>Servlet配置属性参考``org.springframework.boot.autoconfigure.web.ServerProperties``类</small>
+    		- <font size="2">Servlet配置属性参考``org.springframework.boot.autoconfigure.web.ServerProperties``类</font>
  	- 自定义Servlet三大组件【Servlet、Filter、Listener】
-    	- <small>``ServletRegistrationBean``</small>
-		- <small>``FilterRegistrationBean``</small>
-		- <small>``ServletListenerRegistrationBean``</small>
+    		- <font size="2">``ServletRegistrationBean``</font>
+		- <font size="2">>``FilterRegistrationBean``</font>
+		- <font size="2">``ServletListenerRegistrationBean``</font>
 	- 使用外置的Servlet容器
-    	- <small>程序入口继承``SpringBootServletInitializer``类</small>
- 		- <small>打成war包，放入web容器</small>
+    		- <font size="2">程序入口继承``SpringBootServletInitializer``类</font>
+ 		- <font size="2">打成war包，放入web容器</font>
 - ### 提供Starter简化Maven配置
 	- 集成多个第三方组件[Github](https://github.com/spring-projects/spring-boot/tree/v1.5.4.RELEASE/spring-boot-starters)
 	- [自定义starter](https://github.com/wangboliang/customize-spring-boot-starter/blob/master/README.md)
